@@ -1,0 +1,21 @@
+<pre style='color:#000000;background:#ffffff;'><span style='color:#696969; '>#!/usr/bin/python</span>
+<span style='color:#696969; '># -*- coding: utf-8 -*-</span>
+
+<span style='color:#800000; font-weight:bold; '>from</span> cobregratis<span style='color:#808030; '>.</span>bank_billet <span style='color:#800000; font-weight:bold; '>import</span> BankBillet
+<span style='color:#800000; font-weight:bold; '>from</span> pyactiveresource<span style='color:#808030; '>.</span>connection <span style='color:#800000; font-weight:bold; '>import</span> UnauthorizedAccess
+<span style='color:#800000; font-weight:bold; '>import</span> sys
+
+<span style='color:#800000; font-weight:bold; '>def</span> main<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
+  BankBillet<span style='color:#808030; '>.</span>user <span style='color:#808030; '>=</span> <span style='color:#0000e6; '>'token-do-usuario'</span>
+  BankBillet<span style='color:#808030; '>.</span>password <span style='color:#808030; '>=</span> <span style='color:#0000e6; '>'X'</span>
+  <span style='color:#800000; font-weight:bold; '>try</span><span style='color:#808030; '>:</span>
+    amount <span style='color:#808030; '>=</span> <span style='color:#008000; '>230.50</span>
+    expire_at <span style='color:#808030; '>=</span> <span style='color:#0000e6; '>'2015-07-22'</span>
+    name <span style='color:#808030; '>=</span> <span style='color:#0000e6; '>'Rafael Lima'</span>
+    bank_billet <span style='color:#808030; '>=</span> BankBillet<span style='color:#808030; '>.</span>create<span style='color:#808030; '>(</span><span style='color:#800080; '>{</span><span style='color:#0000e6; '>'amount'</span><span style='color:#808030; '>:</span>amount<span style='color:#808030; '>,</span><span style='color:#0000e6; '>'expire_at'</span><span style='color:#808030; '>:</span>expire_at<span style='color:#808030; '>,</span><span style='color:#0000e6; '>'name'</span><span style='color:#808030; '>:</span>name<span style='color:#800080; '>}</span><span style='color:#808030; '>)</span>
+  <span style='color:#800000; font-weight:bold; '>except</span> UnauthorizedAccess<span style='color:#808030; '>:</span>
+    <span style='color:#800000; font-weight:bold; '>print</span> <span style='color:#0000e6; '>"Access Denied"</span>
+
+<span style='color:#800000; font-weight:bold; '>if</span> <span style='color:#e34adc; '>__name__</span> <span style='color:#808030; '>=</span><span style='color:#808030; '>=</span> <span style='color:#0000e6; '>'__main__'</span><span style='color:#808030; '>:</span>
+  main<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span>
+</pre>
