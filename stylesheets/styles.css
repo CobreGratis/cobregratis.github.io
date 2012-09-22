@@ -1,4 +1,4 @@
-/* 
+/*
 FreshServe - CSS Stylesheet
 ---------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------
@@ -20,18 +20,18 @@ div#theme_colors {
 	text-align: center;
 }
 	div#theme_colors .color_picker { width: 112px; padding: 4px 0px 4px 0px; }
-	div#theme_colors strong{ 
-		color: #fff; 
-		font-size: 10px; 
-		font-weight: bold; 
-		margin-bottom: 8px; 
-		display: block; 
-		cursor: pointer; 
+	div#theme_colors strong{
+		color: #fff;
+		font-size: 10px;
+		font-weight: bold;
+		margin-bottom: 8px;
+		display: block;
+		cursor: pointer;
 	}
-	div#theme_colors span.preview { 
-		color: #999; 
-		text-transform: lowercase; 
-		font-size: 10px; 
+	div#theme_colors span.preview {
+		color: #999;
+		text-transform: lowercase;
+		font-size: 10px;
 		font-weight: normal;
 	}
 div#theme_colors ul {
@@ -43,13 +43,13 @@ div#theme_colors ul {
 		margin: 0px 0px 10px 0px;
 		cursor: pointer;
 	}
-		div#theme_colors ul li span{ 
-			display: block; 
-			width: 20px; 
-			height: 20px; 
-			border: 3px solid #444; 
-			border-right: none; 
-			float: left; 
+		div#theme_colors ul li span{
+			display: block;
+			width: 20px;
+			height: 20px;
+			border: 3px solid #444;
+			border-right: none;
+			float: left;
 		}
 	div#theme_colors ul li .second { border-left: none; border-right: 3px solid #444; margin-right: 5px; }
 	div#theme_colors ul li .blue { background-color: #2468AC;  }
@@ -78,9 +78,9 @@ div#header {
 	background: url('../images/header_bg.gif') repeat-x top;
 	height: 150px;
 }
-	div#header a.logo{ 
-		float: left; 
-		margin-top: 18px; 
+	div#header a.logo{
+		float: left;
+		margin-top: 28px;
 		background: url('../images/logo.png') no-repeat top;
 		width: 264px;
 		height: 80px;
@@ -89,7 +89,7 @@ div#header {
 	div#header ul {
 		list-style: none;
 		float: right;
-		margin-top: 48px;
+		margin-top: 50px;
 	}
 		div#header ul li {
 			height: 60px;
@@ -112,7 +112,7 @@ div#page {
 	margin: 0 auto;
 	margin-top: -33px;
 }
-	div#page .header{ 
+	div#page .header{
 		background: url('../images/page_header.gif') repeat-x top;
 		height: 60px;
 	}
@@ -143,19 +143,19 @@ div#page {
 				div#page .header ul li a:hover {
 					color: #555;
 				}
-	div#page .header_home{ 
+	div#page .header_home{
 		background: url('../images/home_header.gif') repeat-x bottom;
 		height: 320px;
 		position: relative;
-	}	
-		div#page .header .price_tag{ 
+	}
+		div#page .header .price_tag{
 			width: 130px;
 			height: 130px;
 			position: absolute;
 			top: -55px;
 			right: -35px;
 		}
-		div#page .header_home img.main_screenshot{ 
+		div#page .header_home img.main_screenshot{
 			float: left;
 			padding: 20px 0px 0px 35px;
 		}
@@ -187,7 +187,7 @@ div#page {
 		}
 	div#page .bottom {
 		background: url('../images/page_bottom.gif') no-repeat bottom;
-		height: 23px;	
+		height: 23px;
 	}
 	div#page .section_title {
 		width: 240px;
@@ -222,21 +222,21 @@ div.sidebar_box {
 	padding: 15px 20px 10px 20px;
 	margin-bottom: 20px;
 }
-	div.sidebar_box h4 { 
-		font-size: 13px; 
-		color: #444; 
-		font-weight: bold; 
+	div.sidebar_box h4 {
+		font-size: 13px;
+		color: #444;
+		font-weight: bold;
 		margin-bottom: 5px;
 	}
-	div.sidebar_box p { 
-		font-size: 12px; 
-		color: #707070; 
-		line-height: 18px; 
+	div.sidebar_box p {
+		font-size: 12px;
+		color: #707070;
+		line-height: 18px;
 		margin-bottom: 0;
 	}
 	div.sidebar_box ul { list-style: circle; padding-left: 16px; margin-top: 10px; }
 		div.sidebar_box ul li { margin-bottom: 5px; }
-	div.sidebar_box a.rss { 
+	div.sidebar_box a.rss {
 		background: url('../images/icons/rss.png') no-repeat top left;
 		padding-left: 22px;
 		text-decoration: none;
@@ -286,7 +286,7 @@ div#screenshots .items ul{ list-style: none; float: left; }
 		width: 155px;
 		height: 110px;
 		margin-right: 25px;
-	}		
+	}
 		div#screenshots .items ul li a{
 			width: 145px;
 			height: 100px;
@@ -376,7 +376,7 @@ div#price_table {
 	div#price_table table {
 		border: 1px solid #d3d4d3;
 		text-align: center;
-	} 
+	}
 		div#price_table table thead{
 			background: #ededed url('../images/table_header.gif') repeat-x bottom;
 		}
@@ -445,8 +445,8 @@ div#signup { }
 		text-align: right;
 		font-size: 12px;
 	}
-		div#signup form label.error { 
-			float: none; 
+		div#signup form label.error {
+			float: none;
 			display: inline;
 			margin-left: 10px;
 			color: #DD3030;
@@ -608,7 +608,7 @@ a.button {
 }
 	a.button span{
 		padding: 8px 5px 10px 20px;
-	}	
+	}
 	a.icon span{ padding-left: 40px; }
 	a.button img{ position: absolute; top: 6px; left: 11px; }
 /*--------------------------------------------
@@ -641,4 +641,33 @@ Mobile
 }
 #iphone{
   background: url(/images/mobile-badges.png) no-repeat -161px 0;
+}
+
+#new-account {
+	-moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+	background:-moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
+	background-color:#77d42a;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	color:#fff !important;
+	font-family:arial;
+	font-size:15px;
+	font-weight:normal;
+	padding:6px 24px;
+	text-decoration:none;
+}#new-account:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );
+	background:-moz-linear-gradient( center top, #5cb811 5%, #77d42a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
+	background-color:#5cb811;
+}#new-account:active {
+	position:relative;
+	top:1px;
 }
