@@ -671,3 +671,14 @@ Mobile
 	position:relative;
 	top:1px;
 }
+
+#stats {
+  background: #000;
+  text-align: center;
+  vertical-align: absmiddle;
+  font-weight: bold;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 30px;
+  color: #fff;
+  padding: 15px;
+}

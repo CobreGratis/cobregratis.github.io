@@ -57,6 +57,9 @@ slug: home
 </div-->
 
 <div id="features">
+  <div id="stats">
+    <span id="counter"><input type="hidden" name="counter-value" value="0" /></span> boletos gerados até o momento.
+  </div>
 
 	<div class="section_title">
 		<h3>Principais Recursos</h3>
@@ -155,4 +158,34 @@ slug: home
 </div>
 <script type="text/javascript">
 mpq.push(["track", "homepage"]);
+</script>
+<script type="text/javascript" src="https://app.cobregratis.com.br/stats.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+$(document).ready(function() {
+  $("#counter").flipCounter({
+    imagePath:"/images/jquery.flipCounter-medium.png", // the path to the sprite image relative to your html document
+    number: 0, // the number we want to scroll from
+    numIntegralDigits: 6, // number of places left of the decimal point to maintain
+    duration: 5000, // number of ms animation should take to complete
+  });
+  $("#counter").flipCounter(
+    "startAnimation", // scroll counter from the current number to the specified number
+    {
+      end_number: 60000, // the number we want the counter to scroll to
+    }
+  );
+});
+$(window).load(function() {
+  if(typeof cobregratis_bank_billets_count != 'undefined') {
+    $("#counter").flipCounter(
+      "startAnimation", // scroll counter from the current number to the specified number
+      {
+        numIntegralDigits: cobregratis_bank_billets_count.length+1, // number of places left of the decimal point to maintain
+        end_number: cobregratis_bank_billets_count, // the number we want the counter to scroll to
+      }
+    );
+  }
+});
+/* ]]> */
 </script>
