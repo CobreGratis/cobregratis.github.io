@@ -358,13 +358,15 @@ div#row_names { float: left; margin: 83px 0px 0px 30px; }
 		line-height: 47px;
 	}
 		div#row_names ul li {
+      padding-right: 16px;
 			font-size: 14px;
 			text-align: right;
 			color: #111;
 		}
-		div#row_names ul li {
+		div#row_names li.item {
 		  cursor: pointer;
-		}
+      background: url('http://c.dryicons.com/images/icon_sets/coquette_icons_set/png/16x16/help.png') no-repeat right;
+    }
 		div#row_names ul .description {
 		  display: none;
 		}
