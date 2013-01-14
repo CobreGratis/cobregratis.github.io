@@ -600,6 +600,9 @@ form .send_form {
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
+form .ui-datepicker-trigger {
+  margin: 1em 0 0 0.5em;
+}
 /*--------------------------------------------
 Buttons
 ---------------------------------------------*/

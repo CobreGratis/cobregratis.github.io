@@ -111,15 +111,15 @@ slug: home
     <input type="hidden" name="bank_billet[instructions]" value="Sr Caixa, não receber este boleto, pois o mesmo foi gerado a título de teste.">
   	<p>
   		<label for="bank_billet_amount">Quantia (R$)</label>
-  		<input id="bank_billet_amount" name="bank_billet[amount]" size="15" type="text" class="validate-currency-br text_field" style="width: 100px" placeholder="Ex: 59,90" />
+  		<input id="bank_billet_amount" name="bank_billet[amount]" size="15" type="text" class="required validate-currency-br text_field" style="width: 100px" placeholder="Ex: 59,90" title="Por favor, forneça um um valor no formato 9.999,99." />
   	</p>
   	<p>
   		<label for="bank_billet_expire_at_date_string">Data de Vencimento</label>
-  	  <input id="bank_billet_expire_at_date_string" maxlength="10" name="bank_billet[expire_at_date_string]" size="14" type="text" class="validate-date-au text_field addDatepicker" style="width: 120px" autocomplete="off" placeholder="Ex: 22/12/2014" />
+  	  <input id="bank_billet_expire_at_date_string" maxlength="10" name="bank_billet[expire_at_date_string]" size="14" type="text" class="required validate-date-au text_field addDatepicker" style="width: 120px" autocomplete="off" placeholder="Ex: 22/12/2014" title="Por favor, forneça uma data no formato dd/mm/aaaa." />
   	</p>
     <p>
       <label for="bank_billet_name">Nome do Sacado</label>
-      <input id="bank_billet_name" name="bank_billet[name]" size="60" type="text" class="required text_field" title="Preencha o seu nome por exemplo" />
+      <input id="bank_billet_name" name="bank_billet[name]" size="60" type="text" class="required text_field" title="Por favor, preencha o nome do sacado." />
     </p>
     <p>
       <button name="commit" type="submit" class="sexybutton sexysimple sexywhite sexymedium">
