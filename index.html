@@ -48,7 +48,7 @@ slug: home
 	</div>
 
 	<a href="javascript:;" class="controls next">Next</a>
-	
+
 	<div class="clear"></div>
 </div-->
 
@@ -56,42 +56,11 @@ slug: home
     <span id="counter"><input type="hidden" name="counter-value" value="0" /></span> boletos gerados até o momento.
   </div>
 
-	<div class="section_title">
+	<!--div class="section_title">
 		<h3>Cobrança por Boleto</h3>
 	</div>
   <iframe width="900" height="506" src="http://www.youtube.com/embed/XhCMJ6CpD4M?rel=0" frameborder="0" allowfullscreen></iframe>
-	<div class="clear spacer"></div>
-
-	<div class="section_title">
-		<h3>Boleto de Exemplo</h3>
-	</div>
-  <form action="https://app.cobregratis.com.br/form/c5169c0eb90e0c566217e25f475769c8/create_bank_billet" method="post" target="_blank" id="bank_billet_example">
-    <input type="hidden" name="bank_billet[description]" value="BOLETO DE DEMONSTRAÇÃO DO COBRE GRÁTIS (<a href='http://cobregratis.com.br'>http://cobregratis.com.br</a>)">
-    <input type="hidden" name="bank_billet[instructions]" value="Sr Caixa, não receber este boleto, pois o mesmo foi gerado a título de teste.">
-  	<p>
-  		<label for="bank_billet_amount">Quantia (R$)</label>
-  		<input id="bank_billet_amount" name="bank_billet[amount]" size="15" type="text" class="validate-currency-br text_field" style="width: 100px" placeholder="Ex: 59,90" />
-  	</p>
-  	<p>
-  		<label for="bank_billet_expire_at_date_string">Data de Vencimento</label>
-  	  <input id="bank_billet_expire_at_date_string" maxlength="10" name="bank_billet[expire_at_date_string]" size="14" type="text" class="validate-date-au text_field addDatepicker" style="width: 120px" autocomplete="off" placeholder="Ex: 22/12/2014" />
-  	</p>
-    <p>
-      <label for="bank_billet_name">Nome do Sacado</label>
-      <input id="bank_billet_name" name="bank_billet[name]" size="60" type="text" class="required text_field" title="Preencha o seu nome por exemplo" />
-    </p>
-    <p>
-      <button name="commit" type="submit" class="sexybutton sexysimple sexywhite sexymedium">
-        <span class="ok">Gerar Boleto de Exemplo</span>
-      </button>
-    </p>
-  </form>
-  <script type="text/javascript">
-  //<![CDATA[
-  $(document).ready(function(){ $('#bank_billet_example').validate(); });
-  //]]>
-  </script>
-  <div class="clear spacer"></div>
+	<div class="clear spacer"></div-->
 
   <div id="features">
   	<div class="section_title">
@@ -102,7 +71,7 @@ slug: home
   	<p><img src="images/icons/businessman_woman.png" alt="" />Cadastro de clientes para facilitar o gerenciamento das cobranças por cliente.</p>
     <p class="last"><img src="images/icons/money.png" alt=""/>O dinheiro cai direto na sua conta corrente em dois dias úteis.</p>
   	<div class="clear spacer"></div>
-	
+
     <p><img src="images/icons/copy_paste.png" alt=""/>Ferramenta de clonagem, para copiar boletos já existentes.</p>
     <p><img src="images/icons/mail_send.png" alt=""/>Envio de boletos por e-mail direto do sistema, para economizar tempo.</p>
     <p class="last"><img src="images/icons/male_users.png" alt=""/>Multiusuários para acesso de todos os funcionários da sua empresa.</p>
@@ -133,6 +102,38 @@ slug: home
     <p class="last"><img src="images/icons/support.png" alt=""/>Não sabe como proceder no banco? Nosso suporte irá te ajudar.</p>
   	<div class="clear"></div>
   </div>
+
+  <div class="section_title">
+		<h3>Boleto de Exemplo</h3>
+	</div>
+  <form action="https://app.cobregratis.com.br/form/c5169c0eb90e0c566217e25f475769c8/create_bank_billet" method="post" target="_blank" id="bank_billet_example">
+    <input type="hidden" name="bank_billet[description]" value="BOLETO DE DEMONSTRAÇÃO DO COBRE GRÁTIS (<a href='http://cobregratis.com.br'>http://cobregratis.com.br</a>)">
+    <input type="hidden" name="bank_billet[instructions]" value="Sr Caixa, não receber este boleto, pois o mesmo foi gerado a título de teste.">
+  	<p>
+  		<label for="bank_billet_amount">Quantia (R$)</label>
+  		<input id="bank_billet_amount" name="bank_billet[amount]" size="15" type="text" class="validate-currency-br text_field" style="width: 100px" placeholder="Ex: 59,90" />
+  	</p>
+  	<p>
+  		<label for="bank_billet_expire_at_date_string">Data de Vencimento</label>
+  	  <input id="bank_billet_expire_at_date_string" maxlength="10" name="bank_billet[expire_at_date_string]" size="14" type="text" class="validate-date-au text_field addDatepicker" style="width: 120px" autocomplete="off" placeholder="Ex: 22/12/2014" />
+  	</p>
+    <p>
+      <label for="bank_billet_name">Nome do Sacado</label>
+      <input id="bank_billet_name" name="bank_billet[name]" size="60" type="text" class="required text_field" title="Preencha o seu nome por exemplo" />
+    </p>
+    <p>
+      <button name="commit" type="submit" class="sexybutton sexysimple sexywhite sexymedium">
+        <span class="ok">Gerar Boleto de Exemplo</span>
+      </button>
+    </p>
+  </form>
+  <script type="text/javascript">
+  //<![CDATA[
+  $(document).ready(function(){ $('#bank_billet_example').validate(); });
+  //]]>
+  </script>
+  <div class="clear spacer"></div>
+
   <div id="mobile">
   	<div class="section_title">
   		<h3>Aplicativos Mobile</h3>
