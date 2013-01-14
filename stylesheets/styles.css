@@ -569,15 +569,18 @@ form .text_field{
 	font-size: 13px;
 	font-style: italic;
 	color: #999;
+	outline: none;
+	float: left;
+	margin-bottom: 2em;
 }
 form .default_text_active {
 	font-style: normal;
 	color: #777;
 }
 form p {
-	float: left;
 	margin: 0;
 	margin-right: 50px;
+	clear:both;
 }
 	form p.last { margin-right: 0; }
 	form p.message { margin-top: 20px; float: none; }
