@@ -127,7 +127,7 @@
 		<div class="bottom"></div>
 	</div>
 	<div id="footer" class="page">
-		<p>Copyright 2010-2013 <a href="http://bielsystems.com.br">BielSystems</a>. Ícones por <a href="http://dryicons.com">DryIcons</a>.</p>
+		 <p><a href="http://bielsystems.com.br">BielSystems</a> CNPJ: 05.813.794/0001-26</p>
 		<ul>
 			<li><a href="/como-funciona-boleto-bancario">Como Funciona Boleto Bancário</a></li>
 			<li><a href="/seguranca">Segurança</a></li>
@@ -137,11 +137,15 @@
 			<li><a href="http://status.cobregratis.com.br/">Status</a></li>
 		</ul>
 		<div class="clear"></div>
+    <p>Copyright 2010-<span id="year"></span> Ícones por <a href="http://dryicons.com">DryIcons</a>.</p>
 	</div>
   
 	<!-- ClickTale Bottom part -->
 
 	<script type='text/javascript'>
+  $(document).ready(function() {
+    $("#year").text( (new Date).getFullYear() );
+    });
 	// The ClickTale Balkan Tracking Code may be programmatically customized using hooks:
 	// 
 	//   function ClickTalePreRecordingHook() { /* place your customized code here */  }

@@ -11,9 +11,9 @@ slug: home
   <!-- Start App Info -->
   <div class="info">
   	<h1>Facilidade e Agilidade nas cobranças com Boleto Bancário</h1>
-  	<p>Comece a receber dinheiro por <strong>boleto bancário</strong> direto na sua conta corrente. Sem limites e sem taxa por boleto. Mais de <strong>40.000 empresas</strong> já usam o Cobre Grátis. Crie sua conta agora, é rápido e simples!</p>
+  	<p>Comece a receber dinheiro por <strong>boleto bancário</strong> direto na sua conta corrente. Sem limites e sem taxa por boleto. <strong id="accounts_number">40.000 empresas</strong> já usam o Cobre Grátis. Crie sua conta agora, é rápido e simples!</p>
   	<a href="https://app.cobregratis.com.br/accounts/new" class="sexybutton sexysimple sexygreen sexyxxl"><span class="ok">Começar a Usar</span></a>&nbsp;&nbsp;
-	  	<span class="sexybutton sexysimple sexyblue sexyxxl"><span class="phone">0800-887-1544</span></span>
+	  	<span class="sexybutton sexysimple sexyblue sexyxxl" sytle="width: 201px;"><span class="phone">3003-0386</span></span>
   	<!--span class="trial">Em 2 minutos você estará usando o sistema.</span-->
     <div class="clear"></div>
   </div>
@@ -100,6 +100,10 @@ analytics.page('homepage');
 <script type="text/javascript" src="https://app.cobregratis.com.br/stats.js"></script>
 <script type="text/javascript">
 /* <![CDATA[ */
+function format(n) {
+    return n.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.");
+}
+
 $(document).ready(function() {
   $("#counter").flipCounter({
     imagePath:"/images/jquery.flipCounter-medium.png", // the path to the sprite image relative to your html document
@@ -124,6 +128,13 @@ $(window).load(function() {
       }
     );
   }
+  
+  if(typeof cobregratis_accounts_count != 'undefined') {
+    $("#accounts_number").text(format((cobregratis_accounts_count)) + " empresas")
+  }
 });
+
+
+accounts_number
 /* ]]> */
 </script>
