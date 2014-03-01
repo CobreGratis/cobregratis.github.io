@@ -690,3 +690,16 @@ Mobile
   color: #fff;
   padding: 15px;
 }
+
+#terms {
+  line-height: 1.5em;
+}
+
+#terms h2 {
+  padding: 1em 0 0 0;
+}
+
+#terms ul li {
+  list-style-type: none;
+  padding: 0.5em 0;
+}
