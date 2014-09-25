@@ -542,35 +542,18 @@ div#about .team ul li a:hover {
 /*--------------------------------------------
 Pricing
 ---------------------------------------------*/
-div#row_names {
-  float: left;
-  margin: 170px 0px 0px 60px;
-}
-
-div#row_names ul {
-  list-style: none;
-  line-height: 46px;
-}
-
-div#row_names ul li {
-  padding-right: 16px;
-  font-size: 14px;
-  text-align: right;
-  color: #111;
-}
-
-div#row_names li.item {
+div#price_table tbody td span.item {
   cursor: pointer;
-  background: url('http://c.dryicons.com/images/icon_sets/coquette_icons_set/png/16x16/help.png') no-repeat right;
+  background: url('../images/icons/help.png') no-repeat right top;
+  padding: 0 15px 0 0;
 }
 
-div#row_names ul .description {
+div#price_table tbody td div.description {
   display: none;
 }
 
 div#price_table {
-  margin-bottom: 30px;
-  float: right;
+  margin: 0px 40px 0px 40px;
 }
 
 div#price_table table {
@@ -586,6 +569,10 @@ div#price_table table thead td {
   padding: 15px 0px 15px 0px;
   width: 127px;
   border-right: 1px solid #d3d3d3;
+}
+
+div#price_table table thead td.large {
+  width: 150px;
 }
 
 div#price_table table tfoot {
@@ -616,6 +603,10 @@ div#price_table tbody td {
   border-right: 1px solid #d9d9d9;
   border-bottom: 1px solid #e6e6e6;
   height: 22px;
+}
+
+div#price_table tbody td.feature {
+  text-align: right;
 }
 
 div#price_table tbody tr.color td {
