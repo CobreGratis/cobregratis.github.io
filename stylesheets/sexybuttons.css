@@ -264,7 +264,7 @@
 	font-weight: bold !important; 
 	color: #fff !important;
 	line-height: 1; 
-	background-image: url(../images/skins/simple/awesome-overlay-sprite.png);
+/*  background-image: url(../images/skins/simple/awesome-overlay-sprite.png);*/
 	background-repeat: repeat-x;
 	background-position: 0 0;
 	

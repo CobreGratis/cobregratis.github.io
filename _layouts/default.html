@@ -31,7 +31,7 @@
   <script type="text/javascript" src="/javascripts/mixpanel.js"></script>
   <script type="text/javascript" src="/javascripts/ie-placeholder.js"></script>
   <script type="text/javascript" src="/javascripts/site.js"></script>
-	<script type="text/javascript">
+	 <!-- <script type="text/javascript">
 	  var _kmq = _kmq || [];
     var _kmk = _kmk || '3250ebae4da4af67c7a86b6087200128d1af89a7';
     function _kms(u){
@@ -44,25 +44,22 @@
     }
     _kms('//i.kissmetrics.com/i.js');
     _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
-  </script>
-  <script type="text/javascript">
+  </script> -->
+    <!-- Google Analytics -->
+    <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-257015-17', 'auto');
+    ga('send', 'pageview');
+    // Loads the Linker plugin
+    ga('require', 'linker');
 
-    var _gaq = _gaq || [];
-    var pluginUrl =
-        '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-    _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-    _gaq.push(['_setAccount', 'UA-257015-17']);
-    _gaq.push(['_setDomainName', 'cobregratis.com.br']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-	<script type="text/javascript">
+    // Instructs the Linker plugin to automatically add linker parameters
+    // to all links and forms pointing to the domain "destination.com".
+    ga('linker:autoLink', ['cobregratis.com.br'], false, true);
+    </script>
+    <script async src='//www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+	<!-- <script type="text/javascript">
     var __lc = {};
     __lc.license = 1045221;
     __lc.lang = 'pt';
@@ -73,7 +70,7 @@
       lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
     })();
-  </script>
+  </script> -->
   <script type="text/javascript">
     var mpq = [];
     mpq.push(["init", "dcce7661abcf7625e93cd58cac8576d8"]);
@@ -99,12 +96,12 @@
   		}
   	})();
   </script>
-  <!-- End Inspectlet Embed Code -->
+  <!-- End Inspectlet Embed Code
   <script type="text/javascript">
   window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(a){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(a),window.analytics.push(t),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var method=window.analytics.methods[i];window.analytics[method]=window.analytics.factory(method)}window.analytics.load=function(a){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+a+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},window.analytics.SNIPPET_VERSION="2.0.6",
   window.analytics.load("ix3kai60ke"),
   window.analytics.page();
-  </script>
+  </script> -->
 </head>
 <body>
 	<!-- ClickTale Top part -->
@@ -139,9 +136,9 @@
 			<li><a href="/como-funciona-boleto-bancario">Como Funciona Boleto Bancário</a></li>
 			<li><a href="/seguranca">Segurança</a></li>
 			<li><a href="http://suporte.cobregratis.com.br">Suporte</a></li>
-			<li><a href="http://roadmap.cobregratis.com.br/">Sugestões</a></li>
+      <!-- <li><a href="http://roadmap.cobregratis.com.br/">Sugestões</a></li> -->
 			<li><a href="https://github.com/CobreGratis/cobregratis-api">API</a></li>
-			<li><a href="http://status.cobregratis.com.br/">Status</a></li>
+      <!-- <li><a href="http://status.cobregratis.com.br/">Status</a></li> -->
 		</ul>
 		<div class="clear"></div>
     <p>Copyright 2010-<span id="year"></span> Ícones por <a href="http://dryicons.com">DryIcons</a>.</p>
