@@ -567,12 +567,12 @@ div#price_table table thead {
 
 div#price_table table thead td {
   padding: 15px 0px 15px 0px;
-  width: 127px;
+  width: 200px;
   border-right: 1px solid #d3d3d3;
 }
 
 div#price_table table thead td.large {
-  width: 150px;
+  width: 200px;
 }
 
 div#price_table table tfoot {
@@ -581,7 +581,7 @@ div#price_table table tfoot {
 
 div#price_table table tfoot td {
   padding: 15px 0px 15px 0px;
-  width: 127px;
+  width: 200px;
   border-right: 1px solid #d3d3d3;
 }
 
