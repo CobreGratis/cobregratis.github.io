@@ -1,4 +1,2 @@
-server: true
-auto: true
-exclude: README Gemfile Gemfile.lock CNAME
+exclude: [README, Gemfile, Gemfile.lock, CNAME]
 permalink: /:title
